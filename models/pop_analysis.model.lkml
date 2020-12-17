@@ -10,3 +10,9 @@ explore: order_items {
 }
 
 # Method 2
+explore: pop_simple {
+  label: "PoP Method 2: Allow users to choose periods with parameters"
+  always_filter: {
+    filters:{field:choose_comparison}
+    filters:{field:choose_breakdown}}
+}
