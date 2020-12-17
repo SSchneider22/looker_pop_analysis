@@ -16,3 +16,11 @@ explore: pop_simple {
     filters:{field:choose_comparison}
     filters:{field:choose_breakdown}}
 }
+
+# Method 3
+explore: pop_parameters {
+  label: "PoP Method 3: Custom choice of current and previous periods with parameters"
+  always_filter: {
+    filters:{field:current_date_range value:"6 months"}
+    filters:{field:compare_to value:"Year" }}
+}
