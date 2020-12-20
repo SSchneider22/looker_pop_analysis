@@ -110,13 +110,3 @@ view: pop_arbitrary {
   dimension: mtd_only {hidden:yes}
   dimension: wtd_only {hidden:yes}
 }
-
-# ---------- EXPLORE ---------- ##
-
-explore: pop_arbitrary {
-  label: "PoP Method 6: Compare two arbitrary date ranges"
-  always_filter: {
-    filters:{field:first_period_filter}
-    filters:{field:second_period_filter}
-    filters:{field:period_selected value:"-NULL"}}
-}
