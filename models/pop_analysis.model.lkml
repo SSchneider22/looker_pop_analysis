@@ -24,3 +24,12 @@ explore: pop_parameters {
     filters:{field:current_date_range value:"6 months"}
     filters:{field:compare_to value:"Year" }}
 }
+
+# Method 6
+  explore: pop_arbitrary {
+    label: "PoP Method 6: Compare two arbitrary date ranges"
+    always_filter: {
+      filters:{field:first_period_filter}
+      filters:{field:second_period_filter}
+      filters:{field:period_selected value:"-NULL"}}
+  }
