@@ -22,6 +22,8 @@ https://help.looker.com/hc/en-us/articles/360050104194-Methods-for-Period-Over-P
 
 ## グラフ作成手順（２つの選択した期間の比較）
 1. 「PoP Method 3: PoP Method 6: Compare two arbitrary date ranges」のExploreを起動
-2. First periodとSecond Periodをフィルター欄から任意の値に設定
-3.　ディメンション「Period」をグラフに入れる。※比率を出したいときには、不要。
-4.　比較したいメジャーを入れる
+2. First periodとSecond Periodをフィルター欄から任意の値に設定。
+　　割合を出すことを考えるならば、First periodがprevious、Secound Periodがcurrentに該当。※labelをfirstとsecoudに直したほうがわかりやすいかも…
+3.　２つの値を出したいだけならば、Current Period SalesとPrevious Period Salesを入れる。
+
+4.　現在の値と以前からの進捗をシングルバリューで出したいときは、Current Period SalesとTotal sales period-over-periodを選択して、Visualization右上の歯車からcomaprisonをONにすればOK
