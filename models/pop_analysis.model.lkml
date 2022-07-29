@@ -26,13 +26,13 @@ explore: pop_parameters {
 }
 
 # Method 6
-  explore: pop_arbitrary {
-    label: "PoP Method 6: Compare two arbitrary date ranges"
-    always_filter: {
-      filters:{field:first_period_filter}
-      filters:{field:second_period_filter}
-      filters:{field:period_selected value:"-NULL"}}
-  }
+  # explore: pop_arbitrary {
+  #   label: "PoP Method 6: Compare two arbitrary date ranges"
+  #   always_filter: {
+  #     filters:{field:first_period_filter}
+  #     filters:{field:second_period_filter}
+  #     filters:{field:period_selected value:"-NULL"}}
+  # }
 
 
 # aaaaaa
